@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Admin</title>
+</head>
+<body>
+    <h1>Quiz Admin Panel</h1>
+    <table border="1">
+        <tr><th>ID</th><th>Question</th><th>Answer</th></tr>
+        {% for q in questions %}
+        <tr><td>{{q[0]}}</td><td>{{q[1]}}</td><td>{{q[2]}}</td></tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
